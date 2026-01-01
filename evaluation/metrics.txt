@@ -1,8 +1,36 @@
-precision    recall  f1-score   support
+Model: Logistic Regression
+Class Weight: Balanced
+Scaling: StandardScaler
+Decision Threshold: 0.40
 
-           0       0.93      0.64      0.76      1035
-           1       0.47      0.87      0.61       374
+Accuracy: 0.70
+ROC-AUC Score: 0.85
 
-    accuracy                           0.70      1409
-   macro avg       0.70      0.75      0.68      1409
-weighted avg       0.81      0.70      0.72      1409
+Confusion Matrix:
+[[662 373]
+ [ 49 325]]
+
+Classification Report:
+
+Class 0 (No Churn):
+Precision: 0.93
+Recall:    0.64
+F1-score:  0.76
+Support:   1035
+
+Class 1 (Churn):
+Precision: 0.47
+Recall:    0.87
+F1-score:  0.61
+Support:   374
+
+Macro Avg:
+Precision: 0.70
+Recall:    0.75
+F1-score:  0.68
+
+Weighted Avg:
+Precision: 0.81
+Recall:    0.70
+F1-score:  0.72
+
